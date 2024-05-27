@@ -14,7 +14,7 @@ IMAGE_NAME = sectorOS.flp
 all: build run
 
 run:
-	qemu-system-i386 -fda $(IMAGE_NAME)
+	qemu-system-i386 -fda $(IMAGE_NAME) -boot a
 
 build:
 	touch $(IMAGE_NAME)
